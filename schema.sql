@@ -30,6 +30,8 @@ CREATE TABLE posts (
     user_id INT NOT NULL,
     current_content TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    current_version INT DEFAULT 1
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Post Versions
@@ -49,6 +51,8 @@ CREATE TABLE comments (
     user_id INT NOT NULL,
     current_content TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    current_version INT DEFAULT 1
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Comment Versions
