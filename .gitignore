@@ -1,0 +1,14 @@
+.DS_Store          # macOS system file
+Thumbs.db          # Windows thumbnail cache
+Desktop.ini        # Windows desktop settings
+
+.vscode/           # VS Code workspace settings
+.idea/             # IntelliJ/PyCharm settings
+
+*.mwb.bak          # MySQL Workbench backup files
+
+*.log              # Log files
+*.tmp              # Temporary files
+*.temp             # Temporary files
+
+.env               # Environment variables
