@@ -29,8 +29,8 @@ CREATE TABLE posts (
     post_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     current_content TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    current_version INT DEFAULT 1
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    current_version INT DEFAULT 1,
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -50,8 +50,8 @@ CREATE TABLE comments (
     post_id INT NOT NULL,
     user_id INT NOT NULL,
     current_content TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    current_version INT DEFAULT 1
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    current_version INT DEFAULT 1,
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
